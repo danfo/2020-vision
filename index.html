@@ -1,0 +1,232 @@
+<html>
+  <head>
+    <title>2020 VISION</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,900|Trirong:200i&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body,
+      h1,
+      h2,
+      p {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: black;
+        color: #ccc;
+      }
+      a {
+        color: #ccc;
+      }
+      h1, b {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+      }
+      h2, i {
+        font-family: 'Trirong', sans-serif;
+        font-weight: 200;
+        font-style: italic;
+      }
+      p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+      }
+
+      /* Single column layout for small screens */
+      @media (max-device-width: 480px) {
+        p {
+          font-size: 1.4rem;
+          line-height: 3rem;
+          margin: 2rem 0;
+        }
+        section {
+          background-color: white;
+          color: black;
+        }
+        section:first-child .negative {
+          padding: 6rem 70px;
+          background-color: black;
+          color: #ccc;
+        }
+        section:not(:first-child) {
+          padding: 3rem 0 1rem 0;
+          border-top: 1px solid black;
+        }
+        section:not(:first-child) .negative {
+          margin-left: 70px;
+        }
+        section:not(:first-child) .negative h2 {
+          display: inline;
+          padding: 0 40px 0 0;
+          background-color: black;
+          white-space: pre-wrap;
+          box-shadow: -40px 0 0 black;
+          color: #ccc;
+          font-size: 4rem;
+          line-height: 7rem;
+        }
+        .positive {
+          padding: 2rem 70px;
+        }
+        h1 {
+          text-align: center; 
+          margin: 4rem 0;
+          font-size: 6rem;
+        }
+        .positive h2 {
+          font-size: 7rem;
+          line-height: 7rem;
+          margin: 0 0 2rem 0;
+        }
+        footer {
+          padding: 2rem 70px;
+          color: white;
+        }
+      }
+
+      /* Two column layout for the rest */
+      @media (min-device-width: 481px) {
+        section {
+          display: flex;
+        }
+        footer {
+          padding: 8vw 8vw 4vw 8vw;
+        }
+        h1 {
+          font-size: calc(0.4rem + 1.2vw);
+        }
+        h2 {
+          font-size: calc(0.2rem + 4vw);
+          line-height: calc(0.5rem + 4.2vw);
+          margin: 2vw 6vw;
+        }
+        p {
+          font-size: calc(0.4rem + 1vw);
+          line-height: calc(0.4rem + 1.5vw);
+        }
+        .positive,
+        .negative {
+          flex: 1;
+          padding: 4vw 0;
+        }
+        .positive {
+          background-color: white;
+          color: black;
+        }
+        section:not(:first-child) .positive {
+          border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        .positive h1 {
+          margin: 2vw 0 0 6vw;
+        }
+        .positive p {
+          margin: 2vw 8vw 2vw 6vw;
+        }
+        section:not(:first-child) .negative {
+          border-top: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .negative p {
+          margin: 2vw 6vw 2vw 8vw;
+        }
+        .negative h1,
+        .negative h2 {
+          text-align: right;
+        }
+        section:first-child .positive {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="negative">
+        <p>
+          In 1987, the baby boomer generation were able to trust the science and take swift, global
+          action, saving us from suffering due to an invisible, growing hole in the ozone layer.
+        </p>
+        <p>
+          By the end of the decade in 2019, the science of human-caused climate change is
+          not news: Our emissions &rarr; unprecedented temperature change
+          &rarr; <i>many problems for us</i>.
+        </p>
+        <p>
+          Your politicians and your neighbours aren't changing in a meaningful way for
+          this fresh air, comfort and abundance that you enjoy today to last.
+        </p>
+      </div>
+      <div class="positive">
+        <h1>2020 VISION</h1>
+        <p>Now with 2020 vision, our generations can be known for turning it all around.</p>
+      </div>
+    </section>
+    <section>
+      <div class="negative">
+        <h2>Coal power grid</h2>
+      </div>
+      <div class="positive">
+        <h2>
+          Install solar&nbsp;+&nbsp;battery
+        </h2>
+        <p>Or switch to a provider with growing renewable infrastructure.</p>
+      </div>
+    </section>
+    <section>
+      <div class="negative">
+        <h2>Petrol cars commuting every&nbsp;day</h2>
+      </div>
+      <div class="positive">
+        <h2>Literally do anything else</h2>
+        <p>
+          Consider working remotely, moving house, changing job, buying electric, cycling, bus,
+          train.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="negative">
+        <h2>'Free shipping' and 'Cheap flights'</h2>
+      </div>
+      <div class="positive">
+        <h2>Learn actual costs</h2>
+      </div>
+    </section>
+    <section>
+      <div class="negative">
+        <h2>Hoping for one magic solution</h2>
+      </div>
+      <div class="positive">
+        <h2>Enact all possible solutions</h2>
+      </div>
+    </section>
+    <section>
+      <div class="negative">
+        <h2>Complacency</h2>
+      </div>
+      <div class="positive">
+        <h2>Have a voice</h2>
+        <p>
+          Contact your current government representative to demand immediate, tangible changes that 
+          they can be held accountable for that will result in a swift end for fossil fuels.
+        </p>
+      </div>
+    </section>
+    <footer>
+      <p><b>2020VISION.EARTH</b></p>
+      <p>
+        This is a simple hope for a better tomorrow, please share.
+      </p>
+      <p>
+        <a href="https://github.com/danfo/2020-vision" target="_blank"
+          >Contributions</a
+        > are welcome.
+      </p>
+      
+    </div>
+    </footer>
+  </body>
+</html>
