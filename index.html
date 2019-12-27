@@ -24,6 +24,12 @@
       h1, b {
         font-family: 'Montserrat', sans-serif;
         font-weight: 900;
+        letter-spacing: 1px;
+      }
+      b sub {
+        font-size: 0.5em;
+        vertical-align: baseline;
+        padding: 0 1px;
       }
       h2, i {
         font-family: 'Trirong', sans-serif;
@@ -33,6 +39,15 @@
       p {
         font-family: 'Montserrat', sans-serif;
         font-weight: 300;
+      }
+      footer {
+        color: white;
+      }
+      .positive {
+        position: relative;
+      }
+      .earth {
+        position: absolute;
       }
 
       /* Single column layout for small screens */
@@ -71,9 +86,15 @@
         .positive {
           padding: 2rem;
         }
+        .earth {
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          font-size: 4rem;
+        }
         h1 {
           text-align: center; 
-          margin: 4rem 0;
+          margin: 1rem 0 2rem 0;
           font-size: 2rem;
         }
         .positive h2 {
@@ -83,7 +104,6 @@
         }
         footer {
           padding: 2rem;
-          color: white;
         }
       }
 
@@ -97,6 +117,7 @@
         }
         h1 {
           font-size: calc(0.4rem + 1.2vw);
+          line-height: calc(0.5rem + 4.2vw);
         }
         h2 {
           font-size: calc(0.2rem + 4vw);
@@ -118,6 +139,11 @@
         }
         section:not(:first-child) .positive {
           border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        .earth {
+          left: 0;
+          transform: translateX(-50%);
+          font-size: calc(0.5rem + 4.2vw);
         }
         .positive h1 {
           margin: 2vw 0 0 6vw;
@@ -160,7 +186,10 @@
         </p>
       </div>
       <div class="positive">
-        <h1>2020 VISION</h1>
+        <h1>
+          <div class="earth">🌏</div>
+          2020 VISION
+        </h1>
         <p>Now with 2020 vision, our generations can be known for turning it all around.</p>
       </div>
     </section>
@@ -217,7 +246,7 @@
       </div>
     </section>
     <footer>
-      <p><b>2020VISION.EARTH</b></p>
+      <p><b>2020VISION<sub>🌏</sub>EARTH</b></p>
       <p>
         This is a simple hope for a better tomorrow, please share.
       </p>
